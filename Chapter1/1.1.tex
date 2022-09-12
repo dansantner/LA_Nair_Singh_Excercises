@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts} 
+\usepackage{graphicx}
+\title{Excercises for Sect. 1.1}
+\author{Student}
+\begin{document}
+\maketitle
+\section*{1.}
+\subsection*{(a)}
+$V = \{(a,b) \in \mathbb{R}^2 : 2a+3b = 0\}, \mathbb{F} = \mathbb{R}$.\\
+Closure under addition: $(a,b) + (c,d) = 2a +3b + 2c + 3d = 2(a+c)+3(b+d)$.\\
+Closure under multiplication: $\alpha(a,b) = \alpha(2a+3b) = 2\alpha a + 3\alpha b$.\\
+V is a vector space
+\subsection*{(b)}
+$V = \{(a,b) \in \mathbb{R}^2 : a+b = 1\}, \mathbb{F} = \mathbb{R}$.\\
+NOT closed under addition: $(a,b) + (c,d) = 2$.\\
+V is NOT a vector space.
+\subsection*{(c)}
+$V = \{(a,b) \in \mathbb{R}^2 : ab = 0\}, \mathbb{F} = \mathbb{R}$.\\
+NOT closed under addition: $(1,0) + (0,1) = (1,1),$  $1(1) \ne 0$.\\
+V is NOT a vector space.
+
+\section*{2.}
+\subsection*{(a)}
+$\alpha(a,b) := (a,0)$\\
+Does NOT satisfy Definition 1.1.8:\\ 
+$1(a,b) = (a,0) \ne (a,b)$\\ 
+V is NOT a vector space.
+\subsection*{(b)}
+$\alpha(a,b) := (b,\alpha a)$\\
+Does NOT satisfy Definition 1.1.6:\\ 
+$(\alpha + \beta)(a,b) = (b, (\alpha+\beta)a)$\\
+$\alpha(a,b) + \beta(a,b) = (b, \alpha a) + (b, {\beta}a) = (2b, (\alpha+\beta)a)$ 
+V is NOT a vector space.
+\subsection*{(c)}
+$\alpha(a,b) := (\alpha a,-\alpha b)$\\
+Does NOT satisfy Definition 1.1.7:\\ 
+$(\alpha\beta)(a,b) = (\alpha\beta a, -\alpha\beta b)$\\
+$\alpha(\beta(a,b)) = \alpha(\beta a, -\beta b) = (\alpha\beta a, (-\alpha)-\beta b) = (\alpha\beta a, \alpha\beta b)$\\
+V is NOT a vector space.
+\subsection*{(d)}
+$\alpha(a,b) := (\alpha a,\frac{b}{\alpha})$\\
+Does NOT satisfy Definition 1.1.6:\\
+$(\alpha + \beta)(a,b) = ((\alpha+\beta)a, (\frac{1}{\alpha+\beta}b))$\\
+$\alpha(a,b) + \beta(a,b) = (\alpha a, \frac{1}{\alpha}b) +  (\beta a, \frac{1}{\beta}b) = ((\alpha+\beta)a, (\frac{1}{\alpha} + \frac{1}{\beta}) b)$\\
+V is NOT a vector space.
+
+\section*{8.}
+Door prize to anyone who can solve this.
+\section*{9.}
+Closure under multiplication:\\
+$(\alpha + \beta)x = x, \alpha x + \beta x = x + x = x$\\
+No additive invers
+$x + (-x) = x + (-1)x = x + x = x \ne 0$\\
+V is NOT a vector space.
+
+\end{document}
